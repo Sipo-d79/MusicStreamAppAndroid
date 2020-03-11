@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/s1001"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:onClick="handleSelection"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/michael_buble_collection" />
+
+    <TextView
+        android:id="@+id/txtTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="The Way You Look Tonight"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/s1001"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Billie Jean"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/s1002"
+        app:layout_constraintTop_toBottomOf="@+id/txtArtiste1" />
+
+    <TextView
+        android:id="@+id/txtArtiste1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Michael Buble"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/s1001"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle1" />
+
+    <TextView
+        android:id="@+id/txtArtiste2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Michael Jackson"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/s1002"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle2" />
+
+    <ImageButton
+        android:id="@+id/s1002"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:onClick="handleSelection"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s1001"
+        app:srcCompat="@drawable/billie_jean" />
+
+    <Button
+        android:id="@+id/btnReallyOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="636dp"
+        android:onClick="isReallyOnline"
+        android:text="Internet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
